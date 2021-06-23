@@ -93,7 +93,7 @@ async def start(bot, update):
         InlineKeyboardButton('💟GROUP💟', url ='https://t.me/joinchat/VSLjbM9klh_qxxV7')
     ],[
         InlineKeyboardButton('🕵🏻‍♂️CREATOR', url='https://t.me/AJ_THUG')
-        InlineKeyboardButton('💡HELP', callback_data="help")
+        InlineKeyboardButton('💡HELP', url='https://t.me/Stardust_Bots_Help')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -108,12 +108,10 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(filters.command(["💡HELP"]) & filters.private, group=1)
+@Client.on_message(filters.command(["help"]) & filters.private, group=1)                                          
 async def help(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
-    ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
     
