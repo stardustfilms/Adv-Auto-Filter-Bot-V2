@@ -93,7 +93,7 @@ async def start(bot, update):
         InlineKeyboardButton('💟GROUP💟', url ='https://t.me/joinchat/VSLjbM9klh_qxxV7')
     ],[
         InlineKeyboardButton('🕵🏻‍♂️CREATOR', url='https://t.me/AJ_THUG')
-        InlineKeyboardButton('💡HELP', callback_data='help')
+        InlineKeyboardButton('💡HELP', url='https://t.me/Stardust_Bots_Help')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
