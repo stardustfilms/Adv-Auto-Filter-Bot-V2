@@ -98,9 +98,9 @@ async def start(bot, update):
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
+    await bot.send_photo(Translation.START_IMAGE,
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
+        caption=Translation.START_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
         parse_mode="html",
@@ -117,9 +117,9 @@ async def help(bot, update):
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
+    await bot.send_photo(Translation.HELP_IMAGE
         chat_id=update.chat.id,
-        text=Translation.HELP_TEXT,
+        caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=update.message_id
