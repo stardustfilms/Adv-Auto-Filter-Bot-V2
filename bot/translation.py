@@ -3,7 +3,6 @@
 # (c) @AlbertEinsteinTG
 
 class Translation(object):
-    START_IMAGE = "https://telegra.ph/file/d5b6d57ae0028cb318f11.jpg"
     START_TEXT = """<b>Hey {}!!</b>
 
 @Stardust_films എന്ന ചാനൽ മൂവീസ് കൊടുക്കുന്ന ബോട്ട് ആണ് ഞാൻ. 
@@ -13,7 +12,6 @@ class Translation(object):
  🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 @AJ_THUG
 </i>"""    
     
-    HELL_IMAGE = "https://telegra.ph/file/770be0f1591c60c0b64e7.jpg"
     HELP_TEXT = """
 Sorry, This Bot Can Only Be Used For @Stardust_in..!
     
