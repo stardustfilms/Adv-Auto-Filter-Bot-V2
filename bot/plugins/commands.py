@@ -118,7 +118,7 @@ async def help(bot, update):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(Translation.HELP_IMAGE
-        chat_id=update.chat.id,
+        chat_id=update.chat_id,
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
